@@ -1,0 +1,30 @@
+/* Light/Dark theme overrides */
+
+/* Default: current site is dark-themed; we add a light variant */
+body.theme-light {
+  background-color: #ffffff;
+  color: #212529;
+}
+
+/* Make hero overlay lighter in light mode so the background image shows */
+body.theme-light .header .overlay {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+/* Cards and common components */
+body.theme-light .card {
+  background-color: #ffffff;
+  color: #212529;
+  border-color: rgba(0,0,0,.125);
+}
+
+/* In light mode, invert utility colors that assume dark bg */
+body.theme-light .bg-dark { background-color: #f8f9fa !important; }
+body.theme-light .text-light { color: #212529 !important; }
+body.theme-light .text-white { color: #212529 !important; }
+body.theme-light .navbar.navbar-dark .navbar-nav .nav-link { color: #f8f9fa; }
+
+/* Buttons on toggle area */
+body.theme-light #theme-toggle.btn { color: #212529; border-color: #212529; }
+body.theme-light #theme-toggle.btn:hover { background-color: #212529; color: #fff; }
+
